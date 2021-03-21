@@ -16,6 +16,11 @@ body {
   color: hsl(0deg, 0%, 0%);
 }
 
+/* base font size */
+html { 
+  font-size: 18px;
+}
+
 h1 {
   font-size: 1.5rem;
   margin-top: 8px;
@@ -36,28 +41,29 @@ header {
 }
 
 .max-width-wrapper {
-  max-width: 570px;
+  max-width: 570px; /* bigger */
   margin: auto;
-  padding-left: 24px;
+  padding-left: 24px; /* this padding is on .card */
 }
 
 .intro-chunk {
   padding-top: 96px;
-  margin-bottom: 48px;
-  width: fit-content;
-  max-width: 300px;
+  margin-bottom: 48px; /* padding bottom instead */
+  width: fit-content; /* didn't use it */ 
+  max-width: 300px; /* smaller */
 }
 
 .intro-chunk > p {
   font-size: 1.25rem;
-  margin-bottom: 32px;
-  line-height: 1.75rem;
+  margin-bottom: 32px; /* didn't use it */ 
+  line-height: 1.75rem; /* no units */ 
 }
 
 main {
   background-color: hsl(0deg, 0%, 60%);
   border-top: 4px solid hsl(0deg, 0%, 40%);
-  height: 100%;
+  height: 100%; /* didn't use it */
+  /* padding 96px 0 */
 }
 
 .indented-heading {
@@ -73,9 +79,10 @@ main {
   background-color: hsl(0deg, 0%, 100%);
   border-bottom: 4px solid hsl(0deg, 0%, 40%);
   margin-top: 48px;
-  margin-left: -24px;
+  margin-left: -24px; /* included the 24px padding here */
   padding-top: 8px;
   padding-bottom: 16px;
+  /* width fit content here */
 }
 
 .card p {
